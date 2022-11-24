@@ -19,6 +19,7 @@
 		else
 		{
 			echo '<script>';
+				echo 'window.alert("Usuario, correo o contraseña Incorrecta");';
 				echo 'window.location.href="index.php";';
 			echo '</script>';
 		}

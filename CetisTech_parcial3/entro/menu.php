@@ -4,46 +4,53 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
 
-    <div class="container">
-    <div class="row">    
-        <div class="col-xs-8 col-xs-offset-2">
-		    <div class="input-group">
-                <div class="input-group-btn search-panel">
-                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                    	<span id="search_concept">Filtrar busqueda</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#contains">Componentes</a></li>
-                      <li><a href="#its_equal">Perifericos</a></li>
-                      <li><a href="#greather_than">Pc Armadas ></a></li>
-                      <li class="divider"></li>
-                      <li><a href="#all">Extras</a></li>
-                    </ul>
-                </div>
-                <input type="hidden" name="search_param" value="all" id="search_param">         
-                <input type="text" class="form-control" name="x" placeholder="Search term...">
-                <span class="input-group-btn">
-                    <button class="btn btn-info" type="button"><img src="img/search.png" alt="" width="23px"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
-            </div>
-        </div>
-	</div>
-</div>
 
-    </ul>
-    <div class="dropdown">
-      <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-      Hola usuario
-      </button>
+
+  <div class="input-group ">
+    <div class="input-group-prepend">
+      <button type="button" class="btn btn-outline-secondary"><img src="img/search.png" width="23px"></button>
+      <button type="button" class="btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">Filtrar busqueda</button>
       <div class="dropdown-menu">
-       <a class="dropdown-item" href="#">Perfil</a>
-       <a class="dropdown-item" href="#">Historial de compras</a>
-       <a class="dropdown-item" href="#">Cerrar sesión</a>
+        <a class="dropdown-item bg-secondary text-dark" href="#">Perifericos</a>
+                            <ul>
+                              <li>Teclados</li>
+                              <li>Ratones</li>
+                              <li>Audifonos</li>
+                              <li>Monitores</li>
+                            </ul>
+        <a class="dropdown-item bg-secondary text-dark" href="#">Componentes</a>
+                            <ul>
+                              <li>Tarjeta Madre</li>
+                              <li>Tarjeta gráfica</li>
+                              <li>Unidades de almacenamiento</li>
+                              <li>Fuente de aimentación</li>
+                            </ul><hr>
+        <a class="dropdown-item bg-secondary text-dark" href="#">Complementos</a>
+                            <ul>
+                              <li>Gabinete</li>
+                            </ul>
+
+
+
       </div>
     </div>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Usuario
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <button class="dropdown-item" type="button" href="#">Perfil</button>
+      <button class="dropdown-item" type="button" href="#">Historial de compras</button>
+      <button class="dropdown-item" type="button" ><a href="../index.php">Cerrar sesión</a></button>
+    </div>
+  </div>
+      
+      
+
 
   </div>
 </nav>
