@@ -5,30 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de interaccion con DB</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.1.js"></script>
 </head>
 <body>
-    <div id="contenido">
+    
+    <br><br><br><br>
+    <div class="container">
+    <div class="col-12">
+    <div class="jumbotron bg-dark text-light">
+        
+        <div class="text-center">
+            <h2>Iniciar sesion</h2>
+            <form  method="POST" action="procesarLogin.php" >
+                <br><br>
+                <br><br>
+                <img src="entro/img/logotech.png" style="float: left"  width="340px" class="img-thumbnail">
 
-        <div id="login" style="width: 200px; margin: auto;">
-            <form  method="POST" action="procesarLogin.php">
-                <h2>Iniciar sesion</h2>
-                <br><br>
-                <br><br>
-                <label for="inputEmail" >Nombre usuario O Correo</label>
-                <br>
-                <input type="text" name="inputUsuario"  placeholder="Nombre de usuario" required autofocus>
-                
-                <br><br>
-                <label for="inputPassword" >Contraseña</label>
-                <br>
-                <input type="password" name="inputPassword" placeholder="Contraseña" required>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Nombre usuario O Correo</label>
+                        <input name="inputUsuario" type="text" class="form-control" placeholder="Nombre de usuario" required>  
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Contraseña</label>
+                        <input name="inputPassword" type="password" class="form-control" placeholder="Contraseña" required>
+                    </div>
+                </div>
 
-                <br><br>
-                <button type="submit">  Iniciar sesión  </button>
-                <br><br>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <button type="submit" class="btn btn-primary">  Iniciar sesión  </button>
+                    </div>
+                </div>
+                <br>
             </form>
-            <a href="nuevo_usuario.php"><button type="button">Nuevo usuario</button></a>
+                
+            <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <a href="nuevo_usuario.php"><button type="button" class="btn btn-primary">Nuevo usuario</button></a>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
+    </div>
+    </div>
+
+
+    
+
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
