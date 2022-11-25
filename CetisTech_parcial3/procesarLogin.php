@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	ConsultarUsuario($_POST['inputUsuario'], $_POST['inputPassword']);
 
 	function ConsultarUsuario($usuario, $password)
@@ -12,6 +14,9 @@
 
 		if($count > 0) //si la variable count es mayor a 0
 		{
+			$estado='activo';
+			$_SESSION['estado']=$estado;
+
 			echo '<script>';
 				echo 'window.location.href="entro/index.php";';
 			echo '</script>';

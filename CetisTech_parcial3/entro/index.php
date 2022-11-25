@@ -1,3 +1,4 @@
+<?php include '../administrarSesion.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

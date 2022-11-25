@@ -44,7 +44,7 @@
     <div class="dropdown-menu dropdown-menu-right">
       <button class="dropdown-item" type="button" href="#">Perfil</button>
       <button class="dropdown-item" type="button" href="#">Historial de compras</button>
-      <button class="dropdown-item" type="button" ><a href="../index.php">Cerrar sesión</a></button>
+      <button class="dropdown-item" type="button" ><a href="cerrarSesion.php">Cerrar sesión</a></button>
     </div>
   </div>
       

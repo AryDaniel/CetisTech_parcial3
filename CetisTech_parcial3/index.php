@@ -37,7 +37,7 @@
 
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <button type="submit" class="btn btn-primary">  Iniciar sesión  </button>
+                        <button type="submit" class="btn btn-primary">  Iniciar sesión  </button><br><br>
                         <a href="nuevo_usuario.php"><button type="button" class="btn btn-primary">Nuevo usuario</button></a>
 
                     </div>
