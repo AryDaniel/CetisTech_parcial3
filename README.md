@@ -7,6 +7,17 @@ Eliminar registro
 General >
 Añadir botón "Agregar al carrito"
 Visualizar perfil
+Alex
+    INDEX 
+        categorias en navbar
+        carousel con productos y ofertas llamativas
+
+Ary
+    Hacer las vistas de las categorias
+    Hacer la pagina de perfil
+        borrar perfil   
+        editar perfil
+        
 
 # Codigo / Bootstrap
 

@@ -23,12 +23,12 @@
 
             <label for="">Correo:</label>
             <div class="form-row">
-                <input name="correo" type="text" class="form-control" placeholder="Nombre de usuario" required>  
+                <input name="correo" type="text" class="form-control" placeholder="Correo electronico" required>  
             </div>
             <br>
             <label for="">Nombre:</label>
             <div class="form-row">
-                <input name="nombre" type="text" class="form-control" placeholder="Contraseña" required>
+                <input name="nombre" type="text" class="form-control" placeholder="Nombre" required>
             </div>
             <br>
             <label for="">Contraseña</label>

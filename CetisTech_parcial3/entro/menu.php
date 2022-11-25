@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.php"><img src="img/logotech.png" alt="" width="75px"></a>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+
+<div class="sombra">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="index.php"><img src="img/logotech.png" alt="" width="65px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,8 +12,7 @@
 
   <div class="input-group ">
     <div class="input-group-prepend">
-      <button type="button" class="btn btn-outline-secondary"><img src="img/search.png" width="23px"></button>
-      <button type="button" class="btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">Filtrar busqueda</button>
+      <button type="button" class="btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">Filtrar busqueda</button>
       <div class="dropdown-menu">
         <a class="dropdown-item bg-secondary text-dark" href="#">Perifericos</a>
                             <ul>
@@ -30,16 +32,13 @@
                             <ul>
                               <li>Gabinete</li>
                             </ul>
-
-
-
       </div>
     </div>
     <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
   </div>
-
+  <button type="button" class="btn btn-light"><img src="img/search.png" width="20px"></button>
   <div class="btn-group">
-    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Usuario
     </button>
     <div class="dropdown-menu dropdown-menu-right">
@@ -53,4 +52,6 @@
 
 
   </div>
+  
 </nav>
+</div>

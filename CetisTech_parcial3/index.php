@@ -24,7 +24,7 @@
 
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="validationTooltip01">Nombre usuario O Correo</label>
+                        <label for="validationTooltip01">Nombre Usuario ó Correo</label>
                         <input name="inputUsuario" type="text" class="form-control" placeholder="Nombre de usuario" required>  
                     </div>
                 </div>
@@ -38,6 +38,8 @@
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <button type="submit" class="btn btn-primary">  Iniciar sesión  </button>
+                        <a href="nuevo_usuario.php"><button type="button" class="btn btn-primary">Nuevo usuario</button></a>
+
                     </div>
                 </div>
                 <br>
@@ -45,7 +47,6 @@
                 
             <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <a href="nuevo_usuario.php"><button type="button" class="btn btn-primary">Nuevo usuario</button></a>
                     </div>
                 </div>
             </div> 
