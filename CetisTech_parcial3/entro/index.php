@@ -8,6 +8,9 @@
     <title>BonIce</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;1,200&display=swap" rel="stylesheet">
 </head>
 <style>
     .fondo{
@@ -21,83 +24,89 @@
     .fondo2{
       background-color: #E7E7E7;
     }
+    .card-custom {
+      background-color: black;
+      color: white;
+    }
+    .montserrat-light{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    .montserrat-bold{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+    .achicar{
+      width: '75px';
+    }
+    .card{
+    margin-bottom: 100px;
+    }
 </style>
 <body class="fondo2">
   <?php include 'menu.php'; ?>
-  <br><br><br><br><br><br><br><br>
+  <br><br><br><br>
     
-  <!-- 1re carousel -->
-  
-  <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!-- 1er card -->
 
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/imagen1.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/imagen2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/imagen3.jpg" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
 
-      </div>
-    </div>
+<div class="media position-relative card-custom">
+  <img src="img/portada.jpg" class="mr-3" alt="...">
+  <div class="media-body card-custom">
+    <br><br><br><br>
+    <p class="montserrat-light">OFERTAS DEL DIA</p>
+    <h5 class="montserrat-bold">25% de descuento en los Samsung Z FLIP del 26 al 29 de Noviembre. Envío gratis desde $ 299
+Tienes envío gratis en millones de productos seleccionados. Aplican condiciones.</h5>
+    <a href="#" class="montserrat-light">Ver más</a>
+  </div>
+</div>
 
-  <br>
+    <!-- Fin 1er card -->
+  <br><br><br><br>
 
   <!-- Mouse's -->
-  <div class="mouse alert " role="">
-    <br><br>
-    <img src="imagenesVenta/mouse1.jpg" class="rounded mx-auto float-left" alt="...">
-    <img src="imagenesVenta/mouse3.jpg" class="img-thumbnail rounded mx-auto float-right" alt="...">
-    <img src="imagenesVenta/mouse2.jpg" class="rounded mx-auto d-block" alt="...">
-    <br><br><br>
+
+<div align="center">
+<div class="card-deck col-sm-12 col-lg-6" >
+  <div class="card">
+    <img src="imagenesVenta/mouse1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ocelot Gaming OGEM01</h5>
+      <p class="card-text">Sensor más preciso: Cuenta con sensor óptico de alta precisión, que permite detectar los movimientos más precisamente al hacer movimientos rápidos.</p>
+    </div>
+    <div class="card-footer">
+    <button class="btn btn-primary">Mas información</button>
+    </div>
   </div>
+  <div class="card">
+    <img src="imagenesVenta/mouse3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Free Wolf M6</h5>
+      <p class="card-text">El nuevo mouse profesional personalizado para juegos 2022, apariencia simple y elegante, diseño ergonómico y aerodinámico, liviano y delgado lo hace ideal para viajar, puede caber fácilmente en un bolso o mochila para portátil.</p>
+    </div>
+    <div class="card-footer">
+    <button class="btn btn-primary">Mas información</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imagenesVenta/mouse2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Logitech G502</h5>
+      <p class="card-text">Además de las características principales de desempeño y personalización, hay muchos detalles meticulosamente diseñados.</p>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary">Mas información</button>
+    </div>
+  </div>
+</div>
+</div>
   
   <!-- PC -->
-  <img src="imagenesVenta/altavoces.png" class="rounded float-left" alt="...">
-  <img src="imagenesVenta/television1.png" class="rounded mx-auto d-block" alt="...">
+  
 
 
   <!-- 2do carousel -->
-  <div class="container">
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/celular2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pcGamer.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/reloj.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-  </div>
+  
       
 
 
