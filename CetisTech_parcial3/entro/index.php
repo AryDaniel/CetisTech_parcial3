@@ -54,6 +54,7 @@
     <a href="#" class="montserrat-light">Ver más</a>
   </div>
 </div>
+<br><br><br>
 
 <!-- Mouse's -->
 <?php           
@@ -189,6 +190,44 @@
       ?>
         <div class="card">
             <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
+            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
+          </div>
+          <div class="card-footer">
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
+          </div>
+        </div>
+
+      <?php 
+          } 
+        }
+        $conexion->close();
+      ?>
+    </div>
+  </div>
+</div>
+
+<!-- Android -->
+<?php        
+  include '../conexionConBD.php';   
+  /* 
+      Esto nos dice que lo BD que seleccionamos 
+      (en este caso BonIceBD)
+      y la tabla es productos
+  */
+  $sql = "select * from productosenventa where nombre_producto like '%Android%'";
+  $datos = $conexion->query($sql);
+?>
+
+<div class="alert fondo" role="alert">
+  <div align="center">
+    <div class="card-deck col-sm-12 col-lg-10" >
+      <?php if($datos->num_rows > 0) { 
+          while($row = $datos->fetch_assoc()) {
+      ?>
+        <div class="card">
+            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
