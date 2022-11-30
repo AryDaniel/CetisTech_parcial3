@@ -58,23 +58,23 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Perifericos</a>
           <a class="dropdown-item" href="#">Componentes</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Extras</a>
+          <a class="dropdown-item" href="#">Celulares</a>
+          <a class="dropdown-item" href="#">Relojes</a>
         </div>
       </li>
       <li>
-        <p class="transparentar"> aaa</p>
+        <p class="transparentar">aaaaaa</p>
       </li>
       <li>
       <form class="form-row"> 
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
       </li>
     </ul>
     <!-- Carrito -->
   <a  href="#" role="button aria-haspopup="true" aria-expanded="false">
-  <img class="perfil" src="img/carrito.png" alt="" width="30px">
+  <img class="perfil" src="img/carrito.png"  width="30px">
   </a>
 
 <p class="transparentar">aaaa</p>
