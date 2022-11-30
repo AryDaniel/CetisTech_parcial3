@@ -80,7 +80,7 @@
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary">Mas información</button>
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
           </div>
         </div>
 
@@ -93,7 +93,7 @@
   </div>
 </div>
 
-<!-- Mouse's -->
+<!-- Pantallas -->
 <?php       
   include '../conexionConBD.php';
   /* 
@@ -118,7 +118,7 @@
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary">Mas información</button>
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
           </div>
         </div>
 
@@ -131,7 +131,7 @@
   </div>
 </div>
 
-<!-- Mouse's -->
+<!-- Auticulares -->
 <?php        
   include '../conexionConBD.php';   
   /* 
@@ -156,7 +156,7 @@
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary">Mas información</button>
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
           </div>
         </div>
 
@@ -169,7 +169,7 @@
   </div>
 </div>
 
-<!-- Mouse's -->
+<!-- IPhone -->
 <?php        
   include '../conexionConBD.php';   
   /* 
@@ -194,7 +194,7 @@
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary">Mas información</button>
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
           </div>
         </div>
 
@@ -207,7 +207,7 @@
   </div>
 </div>
 
-<!-- Mouse's -->
+<!-- Reloj -->
 <?php        
   include '../conexionConBD.php';   
   /* 
@@ -232,7 +232,7 @@
             <p class="card-text"><?php echo $row["descripcion"]; ?></p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary">Mas información</button>
+            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
           </div>
         </div>
 
@@ -244,7 +244,6 @@
     </div>
   </div>
 </div>
-
 
   <br><br><br><br>
   <footer class="text-center">
