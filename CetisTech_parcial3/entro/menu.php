@@ -87,7 +87,7 @@
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Perfil</a>
     <a class="dropdown-item" href="#">Historial de compras</a>
-    <a class="dropdown-item" href="#">Cerrar sesión</a>
+    <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
   </div>
 </div>
   </div>
