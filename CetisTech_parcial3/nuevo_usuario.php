@@ -17,7 +17,7 @@
 
 <br><br>
 <div class="card text-center" style="width: 320px; margin: auto; width: 18rem;">
-    <img src="entro/img/logotech.png" class="card-img-top" alt="...">
+    <img src="entro/img/logotech2.png" class="card-img-top" alt="...">
     <div class="card-body">
         <form action="nuevo_usuario2.php" method="POST" >
 

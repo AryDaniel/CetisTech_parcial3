@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;1,200&display=swap" rel="stylesheet">
 </head>
 <style>
-
-
+    .fondo1{
+      background: rgb(110,178,255);
+      background: linear-gradient(0deg, rgba(110,178,255,1) 0%, rgba(63,148,244,1) 100%);
+    }
     .fondo2{
       background-color: #E7E7E7;
     }
@@ -38,255 +40,83 @@
     }
 </style>
 <body class="fondo2">
-  <?php include 'menu.php'; ?>
-  <br><br><br><br>
-    
-  <!-- 1er card -->
+    <?php include 'menu.php'; ?>
+    <br><br>
 
 
-<div class="media position-relative card-custom">
-  <img src="img/portada.jpg" class="mr-3" alt="...">
-  <div class="media-body card-custom">
-    <br><br><br><br>
-    <p class="montserrat-light">OFERTAS DEL DIA</p>
-    <h5 class="montserrat-bold">25% de descuento en los Samsung Z FLIP del 26 al 29 de Noviembre. Envío gratis desde $ 299
-      Tienes envío gratis en millones de productos seleccionados. Aplican condiciones.</h5>
-    <a href="#" class="montserrat-light">Ver más</a>
-  </div>
-</div>
-<br><br><br>
-
-<!-- Mouse's -->
-<?php           
-  include '../conexionConBD.php';
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%mouse%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
-        </div>
-
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
+  <div class="media position-relative card-custom">
+    <img src="img/portada.jpg" class="mr-3" alt="...">
+    <div class="media-body card-custom">
+      <br><br><br><br>
+      <p class="montserrat-light">OFERTAS DEL DIA</p>
+      <h5 class="montserrat-bold">25% de descuento en los Samsung Z FLIP del 26 al 29 de Noviembre. Envío gratis desde $ 299
+        Tienes envío gratis en millones de productos seleccionados. Aplican condiciones.</h5>
+      <a href="#" class="montserrat-light">Ver más</a>
     </div>
   </div>
-</div>
+  <br><br><br>
 
-<!-- Pantallas -->
-<?php       
-  include '../conexionConBD.php';
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%pantalla%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
+  <div class="container">
+    <div class="card-deck">
+      
+      <div class="card">
+        <a href="categorias.php?categoria='reloj'"><img class="card-img-top" src="img/watch.png"></a>
+        <div class="card-body">
+          <center>Relojes</center>
         </div>
+      </div>
 
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
+      <div class="card">
+        <a href="categorias.php?categoria='mouse'"><img class="card-img-top" src="img/mouse.png"></a>
+        <div class="card-body">
+          <center>Mouse's</center>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="categorias.php?categoria='telefono'"><img class="card-img-top" src="img/telefono-movil.png"></a>
+        <div class="card-body">
+          <center>Telefonos</center>
+        </div>
+      </div>
+
+      <!--
+      <div class="card">
+        <a href="categorias.php"><img class="card-img-top" src="img/speaker.png"></a>
+        <div class="card-body">
+          <center>Altavoces</center>
+        </div>
+      </div>
+      -->
+
+      <div class="card">
+        <a href="categorias.php?categoria='Auriculares'"><img class="card-img-top" src="img/headphones.png"></a>
+        <div class="card-body">
+          <center>Audífonos y Audiculares</center>
+        </div>
+      </div>
+
+      <!--
+      <div class="card">
+        <a href="categorias.php"><img class="card-img-top" src="img/perifericos.png"></a>
+        <div class="card-body">
+          <center>Perifericos</center>
+        </div>
+      </div>
+      -->
+
+      <div class="card">
+        <a href="categorias.php?categoria='Pantalla'"><img class="card-img-top" src="img/imac.png"></a>
+        <div class="card-body">
+          <center>Monitores y Pantallas</h5></center>
+        </div>
+      </div>
+      
     </div>
   </div>
-</div>
 
-<!-- Auticulares -->
-<?php        
-  include '../conexionConBD.php';   
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%auricular%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
-        </div>
-
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
-    </div>
-  </div>
-</div>
-
-<!-- IPhone -->
-<?php        
-  include '../conexionConBD.php';   
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%iPhone%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
-        </div>
-
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
-    </div>
-  </div>
-</div>
-
-<!-- Android -->
-<?php        
-  include '../conexionConBD.php';   
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%Android%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" >
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
-        </div>
-
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
-    </div>
-  </div>
-</div>
-
-<!-- Reloj -->
-<?php        
-  include '../conexionConBD.php';   
-  /* 
-      Esto nos dice que lo BD que seleccionamos 
-      (en este caso BonIceBD)
-      y la tabla es productos
-  */
-  $sql = "select * from productosenventa where nombre_producto like '%reloj%'";
-  $datos = $conexion->query($sql);
-?>
-
-<div class="alert fondo" role="alert">
-  <div align="center">
-    <div class="card-deck col-sm-12 col-lg-10" >
-      <?php if($datos->num_rows > 0) { 
-          while($row = $datos->fetch_assoc()) {
-      ?>
-        <div class="card">
-            <img src="<?php echo $row["imagen"]; ?>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row["nombre_producto"]; ?></h5>
-            <p class="card-text"><?php echo $row["descripcion"]; ?></p>
-          </div>
-          <div class="card-footer">
-            <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
-          </div>
-        </div>
-
-      <?php 
-          } 
-        }
-        $conexion->close();
-      ?>
-    </div>
-  </div>
-</div>
-
-  <br><br><br><br>
   <footer class="text-center">
-      <br><br><br><br><br><br>    
+      <br><br><br><br>   
       2022 &copy; Cetis107 BonIce
   </footer>
   <script src="js/bootstrap.js"></script>

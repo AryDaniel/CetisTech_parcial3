@@ -51,7 +51,7 @@
 
     <!----------------------Productos sugeridos------------------------------->
     <?php        
-        $SQLresultadoCategoria = "select * from productosenventa where categoria like '".$registro["categoria"]."'";
+        $SQLresultadoCategoria = "select * from productosenventa where categoria like '".$registro["categoria"]."' AND id not like '".$registro["id"]."'";
         $resultadoCategoria = $conexion->query($SQLresultadoCategoria);
     ?>
 

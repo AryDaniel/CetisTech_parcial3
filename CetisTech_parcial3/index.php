@@ -20,7 +20,7 @@
             <form  method="POST" action="procesarLogin.php" >
                 <br><br>
                 <br><br>
-                <img src="entro/img/logotech.png" style="float: left"  width="340px" class="img-thumbnail">
+                <img src="entro/img/logotech2.png" style="float: left"  width="340px" class="border border-white">
 
                 <div class="form-row">
                     <div class="col-md-6 mb-3">

@@ -60,6 +60,9 @@
           <a class="dropdown-item" href="#">Componentes</a>
           <a class="dropdown-item" href="#">Celulares</a>
           <a class="dropdown-item" href="#">Relojes</a>
+          <a class="dropdown-item" href="#">Altavoces</a>
+          <a class="dropdown-item" href="#">Audífonos</a>
+          <a class="dropdown-item" href="#">Relojes</a>
         </div>
       </li>
       <li>
