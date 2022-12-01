@@ -38,6 +38,12 @@
     .card{
     margin-bottom: 100px;
     }
+    .card-body:hover{
+      background-color: blue;
+    }
+    .card-body{
+      
+    }
 </style>
 <body class="fondo2">
     <?php include 'menu.php'; ?>
@@ -74,36 +80,36 @@
       </div>
 
       <div class="card">
-        <a href="categorias.php?categoria='Telefonós'"><img class="card-img-top" src="img/telefono-movil.png"></a>
+        <a href="categorias.php?categoria='Telefonos'"><img class="card-img-top" src="img/telefono-movil.png"></a>
         <div class="card-body">
           <center>Telefonós</center>
         </div>
       </div>
 
-      <!--
+      
       <div class="card">
         <a href="categorias.php"><img class="card-img-top" src="img/speaker.png"></a>
         <div class="card-body">
           <center>Altavoces</center>
         </div>
       </div>
-      -->
+      
 
       <div class="card">
         <a href="categorias.php?categoria='Auriculares'"><img class="card-img-top" src="img/headphones.png"></a>
         <div class="card-body">
-          <center>Audífonos y Audiculares</center>
+          <center>Audífonos y Auriculares</center>
         </div>
       </div>
 
-      <!--
+      
       <div class="card">
         <a href="categorias.php"><img class="card-img-top" src="img/perifericos.png"></a>
         <div class="card-body">
           <center>Perifericos</center>
         </div>
       </div>
-      -->
+      
 
       <div class="card">
         <a href="categorias.php?categoria='Pantalla'"><img class="card-img-top" src="img/imac.png"></a>

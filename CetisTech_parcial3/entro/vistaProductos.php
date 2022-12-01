@@ -31,18 +31,18 @@
                         <div class="row align-items-center">
 
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="<?php echo $registro["imagen"]; ?>" width="400px">
+                                <img src="<?php echo $registro["imagen"]; ?> " width="400px">
                             </div>
 
                             <div class="col-lg-6 px-xl-10">
-                                    <h1 class="mb-0"><?php echo $registro["nombre_producto"]; ?></h1>
+                                    <h1 class="mb-0"><?php echo $registro["nombre_producto"]; ?><?php $registro["id"]; ?></h1>
 
                                 <ul class="list-unstyled mb-1-9">
                                     <br><br>
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">$<?php echo $registro["precio"]; ?></li>
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><?php echo $registro["descripcion"]; ?></li>
                                     <form method="post" action="carrito.php">
-                                        <input name="id" type="hidden" value="<?php $registro["id"]; ?>">
+                                        <input name="id" type="number" value="<?php echo $registro["id"]; ?>">
                                         <input type="submit" class="btn btn-info" value="Agregar al carrito"> 
                                         <br>
                                     </form>
