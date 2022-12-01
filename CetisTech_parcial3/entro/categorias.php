@@ -28,12 +28,15 @@
             while($registro = $resultado->fetch_assoc()) {
         ?>
         <div class="col mb-4">
-            <div class="card">
-            <img src="<?php echo $registro["imagen"]; ?>" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $registro["nombre_producto"]; ?></h5>
-                <p class="card-text"><?php echo $registro["descripcion"]; ?></p>
-            </div>
+            <div class="card h-100">
+                <img src="<?php echo $registro["imagen"]; ?>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $registro["nombre_producto"]; ?></h5>
+                    <p class="card-text"><?php echo $registro["descripcion"]; ?></p>
+                </div>
+                <div class="card-footer">
+                    <a href="vistaProductos.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
+                </div>
             </div>
         </div>
         <?php 

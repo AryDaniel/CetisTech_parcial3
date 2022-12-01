@@ -45,7 +45,7 @@
 
 
   <div class="media position-relative card-custom">
-    <img src="img/portada.jpg" class="mr-3" alt="...">
+    <a href="categorias.php?categoria='Telefonós'"><img src="img/portada.jpg" class="mr-3" alt="categorias.php?categoria='telefono'"></a>
     <div class="media-body card-custom">
       <br><br><br><br>
       <p class="montserrat-light">OFERTAS DEL DIA</p>
@@ -54,7 +54,7 @@
       <a href="#" class="montserrat-light">Ver más</a>
     </div>
   </div>
-  <br><br><br>
+  <br><br>
 
   <div class="container">
     <div class="card-deck">
@@ -74,9 +74,9 @@
       </div>
 
       <div class="card">
-        <a href="categorias.php?categoria='telefono'"><img class="card-img-top" src="img/telefono-movil.png"></a>
+        <a href="categorias.php?categoria='Telefonós'"><img class="card-img-top" src="img/telefono-movil.png"></a>
         <div class="card-body">
-          <center>Telefonos</center>
+          <center>Telefonós</center>
         </div>
       </div>
 
@@ -111,12 +111,19 @@
           <center>Monitores y Pantallas</h5></center>
         </div>
       </div>
+
+      <div class="card">
+        <a href="categorias.php?categoria='Altavoces'"><img class="card-img-top" src="img/speaker.png"></a>
+        <div class="card-body">
+          <center>Altavoces</h5></center>
+        </div>
+      </div>
       
     </div>
   </div>
 
   <footer class="text-center">
-      <br><br><br><br>   
+      <br><br>   
       2022 &copy; Cetis107 BonIce
   </footer>
   <script src="js/bootstrap.js"></script>

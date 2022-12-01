@@ -41,13 +41,35 @@
                                     <br><br>
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">$<?php echo $registro["precio"]; ?></li>
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><?php echo $registro["descripcion"]; ?></li>
-                            </div>
+                                    <form method="post" action="carrito.php">
+                                        <input name="id" type="hidden" value="<?php $registro["id"]; ?>">
+                                        <input type="submit" class="btn btn-info" value="Agregar al carrito"> 
+                                        <br>
+                                    </form>
+                                </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!----------------------Productos sugeridos------------------------------->
     <?php        

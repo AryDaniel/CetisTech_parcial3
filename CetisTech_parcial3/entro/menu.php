@@ -48,31 +48,38 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Inicio <span class="sr-only"></span></a>
       </li>
+      
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true">
-          Categorías
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Perifericos</a>
-          <a class="dropdown-item" href="#">Componentes</a>
-          <a class="dropdown-item" href="#">Celulares</a>
-          <a class="dropdown-item" href="#">Relojes</a>
-          <a class="dropdown-item" href="#">Altavoces</a>
-          <a class="dropdown-item" href="#">Audífonos</a>
-          <a class="dropdown-item" href="#">Relojes</a>
-        </div>
-      </li>
-      <li>
-        <p class="transparentar">aaaaaa</p>
-      </li>
-      <li>
-      <form class="form-row"> 
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+          <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true">
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <dl>
+            <a class="dropdown-item" href="#">Perifericos</a>
+            <ul>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Altavoces</a></li>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Auriculares'">Audífonos</a></li>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Pantalla'">Monitores</a></li>
+            </ul>
+
+            <a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Telefonós</a>
+            <a class="dropdown-item" href="categorias.php?categoria='Relojes'">Relojes</a>
+          </div>
+        </li>
+
+        <li>
+          <p class="transparentar">aaaaaa</p>
+        </li>
+        <li>
+        <form class="form-row"> 
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
       </li>
     </ul>
     <!-- Carrito -->
