@@ -7,9 +7,13 @@
     $sql = "UPDATE productosenVenta SET carrito='1' ". "WHERE id=".$id;
 
     if($conexion->query($sql) === TRUE){
-        include 'vistaCarrito.php';
+
+        echo '<script>';
+            echo 'window.location.href="index.php";';
+            echo 'window.alert("Producto añadido");';
+        echo '</script>';
     } 
 
-    $conexion->close();
+ 
 
 ?>

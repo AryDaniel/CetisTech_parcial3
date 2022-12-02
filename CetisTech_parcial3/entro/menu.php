@@ -1,22 +1,22 @@
 <style>
-.fondo-navbar{
-  box-shadow: 0px 5px 5px #C6C2C2;
-    }
-  .bg-custom, .dropdown-menu, .dropdown-item {
-      background-color: #1765be;
-    }
-    .dropdown-item:hover{
-      background-color: #5D9CE3;
-    }
-  .navbar-custom .navbar-brand,
-  .navbar-custom .navbar-text,
-  .dropdown-item, .nav-link{
-      color: #cbbde2;
-    }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-text:hover,
-  .dropdown-item:hover, .nav-link:hover{
-      color: white;
+  .fondo-navbar{
+    box-shadow: 0px 5px 5px #C6C2C2;
+      }
+    .bg-custom, .dropdown-menu, .dropdown-item {
+        background-color: #1765be;
+      }
+      .dropdown-item:hover{
+        background-color: #5D9CE3;
+      }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text,
+    .dropdown-item, .nav-link{
+        color: #cbbde2;
+      }
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .navbar-text:hover,
+    .dropdown-item:hover, .nav-link:hover{
+        color: white;
     }
     .form-control{
       width: 300px; 
@@ -36,8 +36,17 @@
     .icono-principal:hover{
       opacity: 1;
     }
+    .btn-custom{
+      background-color: #1765be;
+    }
 </style>
+  <?php
+      include ('../conexionConBD.php');
+      $sql = "SELECT * FROM `productosenventa` WHERE carrito = '1'";
+      $contarCarrito = $conexion->query($sql);
 
+      $count = mysqli_num_rows($contarCarrito);
+  ?>
 <!-- Navbar -->
 <div class="fondo-navbar">
 <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
@@ -83,9 +92,12 @@
       </li>
     </ul>
     <!-- Carrito -->
-  <a  href="#" role="button aria-haspopup="true" aria-expanded="false">
+    
+  <a  href="vistaCarrito.php" role="button aria-haspopup="true" aria-expanded="false">
   <img class="perfil" src="img/carrito.png"  width="30px">
+  <button type="button" class="btn btn-custom"><span class="badge badge-light"><?php echo $count; ?></span>
   </a>
+</button>
 
 <p class="transparentar">aaaa</p>
 
@@ -97,7 +109,6 @@
 
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Perfil</a>
-    <a class="dropdown-item" href="#">Historial de compras</a>
     <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
   </div>
 </div>

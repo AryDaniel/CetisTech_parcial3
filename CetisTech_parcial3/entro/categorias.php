@@ -17,7 +17,7 @@
         include '../conexionConBD.php';
         $categoria = $_GET["categoria"];
         $sql = "SELECT * FROM productosenVenta 
-            WHERE categoria=" . $categoria;
+        WHERE categoria=" . $categoria;
         $resultado = $conexion->query($sql);
     ?>
     <h1><?php echo $categoria ?></h1>

@@ -39,7 +39,7 @@
     margin-bottom: 100px;
     }
     .card-body:hover{
-      background-color: blue;
+      background-color: #c2b3d8;
     }
     .card-body{
       
@@ -85,14 +85,6 @@
           <center>Telefonós</center>
         </div>
       </div>
-
-      
-      <div class="card">
-        <a href="categorias.php"><img class="card-img-top" src="img/speaker.png"></a>
-        <div class="card-body">
-          <center>Altavoces</center>
-        </div>
-      </div>
       
 
       <div class="card">
@@ -102,14 +94,14 @@
         </div>
       </div>
 
-      
+      <!--
       <div class="card">
         <a href="categorias.php"><img class="card-img-top" src="img/perifericos.png"></a>
         <div class="card-body">
           <center>Perifericos</center>
         </div>
       </div>
-      
+      -->
 
       <div class="card">
         <a href="categorias.php?categoria='Pantalla'"><img class="card-img-top" src="img/imac.png"></a>
@@ -130,7 +122,7 @@
 
   <footer class="text-center">
       <br><br>   
-      2022 &copy; Cetis107 BonIce
+      2022 &copy; Cetis107 CetisTech
   </footer>
   <script src="js/bootstrap.js"></script>
 </body>
