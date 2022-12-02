@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-12-2022 a las 22:24:47
+-- Tiempo de generación: 02-12-2022 a las 18:31:55
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -54,7 +54,7 @@ INSERT INTO `productosenventa` (`id`, `nombre_producto`, `precio`, `descripcion`
 (13, 'Telcel Apple iPhone 11 Black\r\n', 11800, 'iPhone 11 es el nuevo favorito entre los gadgets del momento.\r\ntamaño de 6.1\" con pantalla con tecnología LCD Liquit Retina, True Tone', 'imagenesVenta/Apple11Black.jpg', 'Telefonos', '0'),
 (14, 'Apple iPhone 9 ', 7200, '+Body Dimensions 138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)\r\n+Sreen Glass Gorilla Glass, Screen 5.5 inches, 83.4 cm2\r\n+Aluminum back, aluminum frame\r\n+Nano-SIM\r\n+Resolution 750 x 1334 pixels\r\n+3D Touch display & home button\r\n+Operating System: iOS 13', 'imagenesVenta/iphone-9-back.jpg', 'Telefonos', '1'),
 (15, 'Apple iPhone 8', 4890, 'This Apple iPhone 8 64GB Factory Unlocked Smartphone has been determined fully functional by our industry leading functionality inspection.', 'imagenesVenta/iphone8black.jpg', 'Telefonos', '0'),
-(16, 'IP68 Impermeable Relojes Inteligentes con Monitor de Ritmo Cardíaco', 479, '- Monitor de Ritmo Cardíaco y de Sueño\r\n- Seguimiento de Actividades en Tiempo Real\r\n- Multifunción y Notificación Mensaje\r\n- Pantalla OLED y IP68 Resistente al Agua', 'imagenesVenta/RelojesInteligentes1.jpg', 'reloj', '0'),
+(16, 'IP68 Impermeable Relojes Inteligentes con Monitor de Ritmo Cardíaco', 479, '- Monitor de Ritmo Cardíaco y de Sueño\r\n- Seguimiento de Actividades en Tiempo Real\r\n- Multifunción y Notificación Mensaje\r\n- Pantalla OLED y IP68 Resistente al Agua', 'imagenesVenta/RelojesInteligentes1.jpg', 'reloj', '1'),
 (17, 'Q8 stylish Relojes sports smartwatch', 1200, 'Reloj inteligente deportivo para hombre y mujer, pulsera con control del ritmo cardíaco, resistente al agua, para Android e iOS, 2020\r\n', 'imagenesVenta/RelojesInteligentes2.jpg', 'reloj', '0'),
 (18, 'soundpeats smartwatch Relojes ipx68', 699, 'Color - Purpúreo + Rosa\r\nTamaño de la pantalla - 1.69 Pulgadas\r\nForma - Fectangular\r\nRango de edad - Adulto', 'imagenesVenta/RelojesInteligentes3.jpg', 'reloj', '0'),
 (19, 'Alcatel 71A ', 2069, 'Se trata de un equipo con sistema operativo Android 10 con tecnología 4G y conexión wi-fi, cuenta con cámara trasera de 8 mp con flash y cámara frontal de 5 mp. La pantalla es de 5.5\", memoria interna 32 GB expandible a 128 GB y memoria RAM de 2GB. Funciona con procesador quad core de 1.2 GHz y con batería de 3000 mAh.', 'imagenesVenta/celular4.jpg', 'Telefonos', '1'),
@@ -75,7 +75,7 @@ INSERT INTO `productosenventa` (`id`, `nombre_producto`, `precio`, `descripcion`
 
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
-  `correo` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
   `usuario` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -84,7 +84,7 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `correo`, `usuario`, `password`) VALUES
+INSERT INTO `usuarios` (`id_usuario`, `email`, `usuario`, `password`) VALUES
 (1, 'admin@gmail.com', 'admin', 'admin'),
 (3, 'joan.ochoa@cetis107.edu.mx\r\n', 'joan', 'joan'),
 (4, 'cetis0107@hotmail.com', 'Jiq', '12345678'),
@@ -121,7 +121,7 @@ ALTER TABLE `productosenventa`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

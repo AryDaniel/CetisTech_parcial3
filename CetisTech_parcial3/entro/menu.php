@@ -18,6 +18,9 @@
     .dropdown-item:hover, .nav-link:hover{
         color: white;
     }
+    .PerifeficosVida{
+      color: #cbbde2;
+    }
     .form-control{
       width: 300px; 
     }
@@ -68,15 +71,19 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <dl>
-            <a class="dropdown-item" href="#">Perifericos</a>
+          <p class="PerifeficosVida"> Perifericos</p>
             <ul>
               <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Altavoces</a></li>
               <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Auriculares'">Audífonos</a></li>
               <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Pantalla'">Monitores</a></li>
             </ul>
 
-            <a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Telefonós</a>
-            <a class="dropdown-item" href="categorias.php?categoria='Relojes'">Relojes</a>
+            <p class="PerifeficosVida"> Vida Diaria</p>
+            <ul>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Telefonós</a></li>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Relojes'">Relojes</a></li>
+            </ul>
+
           </div>
         </li>
 
@@ -108,7 +115,7 @@
   </a>
 
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Perfil</a>
+    <a class="dropdown-item" href="perfil.php">Perfil</a>
     <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
   </div>
 </div>

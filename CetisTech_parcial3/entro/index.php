@@ -46,7 +46,7 @@
     }
 </style>
 <body class="fondo2">
-    <?php include 'menu.php'; ?>
+    <?php include 'menu.php';?>
     <br><br>
 
 
