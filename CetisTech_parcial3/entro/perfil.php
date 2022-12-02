@@ -10,9 +10,7 @@
     <script src="js/jquery-3.6.1.js"></script>
 </head>
 <body class="fondo2">
-  <?php include 'menu.php'; 
-  echo $_SESSION['id_perfil_registro'];
-  ?>
+  <?php include 'menu.php'; ?>
 
 
   <?php
@@ -24,7 +22,7 @@
 ?>
 
 
-    <br><br><br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 mb-4 mb-sm-5">
@@ -32,7 +30,7 @@
                     <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="img/login.png" width="400px">
+                                <img class="rounded-lg" src="<?php echo $registro['imagen']; ?>" width="400px">
                             </div>
 
 
@@ -57,7 +55,15 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                <ul class="list-unstyled mb-1-9">
+                                    <br><br>
+                                    <?php 
+                                        include "editarPerfil.php";
+                                    ?>
+                                </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>

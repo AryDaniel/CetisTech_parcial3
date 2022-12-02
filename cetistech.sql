@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2022 a las 18:31:55
+-- Tiempo de generación: 02-12-2022 a las 20:21:00
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -77,19 +77,20 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `email` varchar(200) NOT NULL,
   `usuario` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL
+  `password` varchar(200) NOT NULL,
+  `imagen` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `email`, `usuario`, `password`) VALUES
-(1, 'admin@gmail.com', 'admin', 'admin'),
-(3, 'joan.ochoa@cetis107.edu.mx\r\n', 'joan', 'joan'),
-(4, 'cetis0107@hotmail.com', 'Jiq', '12345678'),
-(6, 'fernando@cetis107.edu.mx', 'FERNANDO', 'FERNANDO'),
-(7, 'contacto@bancoazteca.mx', 'bancoazteca', 'abc123');
+INSERT INTO `usuarios` (`id_usuario`, `email`, `usuario`, `password`, `imagen`) VALUES
+(1, 'admin@gmail.com', 'admin', 'admin', 'imgUsuario/DALLE.png'),
+(3, 'joan.ochoa@cetis107.edu.mx\r\n', 'joan', 'joan', 'imgUsuario/login.png'),
+(4, 'cetis0107@hotmail.com', 'Jiq', '12345678', 'imgUsuario/login.png'),
+(6, 'fernando@cetis107.edu.mx', 'FERNANDO', 'FERNANDO', 'imgUsuario/login.png'),
+(7, 'contacto@bancoazteca.mx', 'bancoazteca', 'abc123', 'imgUsuario/login.png'),
 
 --
 -- Índices para tablas volcadas

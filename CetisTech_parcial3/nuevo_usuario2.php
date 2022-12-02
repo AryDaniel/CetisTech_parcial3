@@ -18,14 +18,15 @@
     }else{
         include 'conexionConBD.php';
 
-        $sentencia="INSERT INTO usuarios (email, usuario, password) 
-        VALUES('".$correo."','".$usuario."','".$contrasena."')   ";
+        $sentencia="INSERT INTO usuarios (email, usuario, password, imagen) 
+        VALUES('".$correo."','".$usuario."','".$contrasena."', 'imgUsuario/login.png')   ";
         $conexion->query($sentencia);
         
         
-        $sql = "SELECT id_usuario FROM usuarios WHERE email=" . $correo;
+        $sql = "SELECT * FROM usuarios WHERE email='" . $correo. "'";
         $id_perfil = $conexion->query($sql);
         $id_perfil_registro = $id_perfil->fetch_assoc();
+
         
         $_SESSION['id_perfil_registro'] = $id_perfil_registro['id_usuario'];
         $estado='activo';
