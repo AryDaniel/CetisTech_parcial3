@@ -11,37 +11,54 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+<style>
+        body{
+        background: #98E96A;
+        background linear-gradient(to right, #86E84F, #98E96A);
+    }
+    .bg{
+        background-image: url(entro/img/BG2.jpg);
+        background-position: center center;
+    }
+</style>
 </head>
 <body>
 
 
-<br><br>
-<div class="card text-center" style="width: 320px; margin: auto; width: 18rem;">
-    <img src="entro/img/logotech2.png" class="card-img-top" alt="...">
-    <div class="card-body">
-        <form action="nuevo_usuario2.php" method="POST" >
+<div class="container w-75 bg-light mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block">
 
-            <label for="">Correo:</label>
-            <div class="form-row">
-                <input name="correo" type="text" class="form-control" placeholder="Correo electronico" required>  
             </div>
-            <br>
-            <label for="">Nombre:</label>
-            <div class="form-row">
-                <input name="nombre" type="text" class="form-control" placeholder="Nombre" required>
-            </div>
-            <br>
-            <label for="">Contraseña</label>
-            <div class="form-row">
-                <input name="contrasena" type="password" class="form-control" placeholder="Contraseña" required>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">   Crear usuario  </button>
-            <br>
+            <div class="col">
+                <div class="text-end text-right">
+                    <img src="entro/img/logotech4.png" width="48" alt="">
+                </div>
 
-        </form>
-    </div> 
-</div>
+                <h2 class="fw-bold text-center py-3">Registrate</h2>
+                <!-- LOGIN -->
+                <form method="POST" action="nuevo_usuario2.php">
+                    <div class="mb-4">
+                        <label for="inputUsuario" class="form-label">Nombre completo:</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputPassword" class="form-label">Correo electronico:</label>
+                        <input type="email" class="form-control" name="correo" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputPassword" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" name="contrasena" required>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Crear cuenta</button>
+                    </div>
+                    <br>
+                </form>            
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.js"></script>
 </body>

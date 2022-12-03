@@ -7,56 +7,51 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+<style>
+    body{
+        background: #7EDAF3;
+        background linear-gradient(to right, #6CD2EE, #7EDAF3);
+    }
+    .bg{
+        background-image: url(entro/img/BG.jpg);
+        background-position: center center;
+    }
+</style>
 </head>
 <body>
     
-    <br><br><br><br>
-    <div class="container">
-    <div class="col-12">
-    <div class="jumbotron bg-dark text-light">
-        
-        <div class="text-center">
-            <h2>Iniciar sesion</h2>
-            <form  method="POST" action="procesarLogin.php" >
-                <br><br>
-                <br><br>
-                <img src="entro/img/logotech2.png" style="float: left"  width="340px" class="border border-white">
+    <div class="container w-75 bg-light mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block">
 
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationTooltip01">Nombre Usuario ó Correo</label>
-                        <input name="inputUsuario" type="text" class="form-control" placeholder="Nombre de usuario" required>  
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationTooltip02">Contraseña</label>
-                        <input name="inputPassword" type="password" class="form-control" placeholder="Contraseña" required>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="text-end text-right">
+                    <img src="entro/img/logotech3.png" width="48" alt="">
                 </div>
 
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <button type="submit" class="btn btn-primary">  Iniciar sesión  </button><br><br>
-                        <a href="nuevo_usuario.php"><button type="button" class="btn btn-primary">Nuevo usuario</button></a>
-
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <!-- LOGIN -->
+                <form method="POST" action="procesarLogin.php">
+                    <div class="mb-4">
+                        <label for="inputUsuario" class="form-label">Correo electronico:</label>
+                        <input type="text" class="form-control" name="inputUsuario" required>
                     </div>
-                </div>
-                <br>
-            </form>
-                
-            <div class="form-row">
-                    <div class="col-md-6 mb-3">
+                    <div class="mb-4">
+                        <label for="inputPassword" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" name="inputPassword" required>
                     </div>
-                </div>
-            </div> 
+                    <div class="mb-4"></div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+                    <div class="my-3">No tienes cuenta? <a href="nuevo_usuario.php">Registrate</a></div>
+                </form>            
+            </div>
         </div>
     </div>
-    </div>
-    </div>
 
-
-    
 
 
     <script src="js/bootstrap.js"></script>
