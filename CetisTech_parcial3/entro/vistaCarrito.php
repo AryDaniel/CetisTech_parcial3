@@ -33,7 +33,8 @@
                     <p class="card-text"><?php echo $registro["descripcion"]; ?></p>
                 </div>
                 <div class="card-footer">
-                    <a href="vistaProductos.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
+                    <a href="vistaProductos.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-primary">Acerca de</a>
+                    <a href="eliminarCarrito.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-danger">Eliminar</a>
                 </div>
             </div>
         </div>
