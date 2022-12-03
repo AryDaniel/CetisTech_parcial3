@@ -34,7 +34,7 @@
                 <!-- LOGIN -->
                 <form method="POST" action="procesarLogin.php">
                     <div class="mb-4">
-                        <label for="inputUsuario" class="form-label">Correo electronico:</label>
+                        <label for="inputUsuario" class="form-label">Correo electrónico o usuario:</label>
                         <input type="text" class="form-control" name="inputUsuario" required>
                     </div>
                     <div class="mb-4">

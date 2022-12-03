@@ -73,9 +73,10 @@
           <dl>
           <p class="PerifeficosVida"> Perifericos</p>
             <ul>
-              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Telefonós'">Altavoces</a></li>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Altavoces'">Altavoces</a></li>
               <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Auriculares'">Audífonos</a></li>
               <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Pantalla'">Monitores</a></li>
+              <li type="disc"><a class="dropdown-item" href="categorias.php?categoria='Mouse'">Mouse</a></li>
             </ul>
 
             <p class="PerifeficosVida"> Vida Diaria</p>
@@ -116,6 +117,8 @@
 
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="perfil.php">Perfil</a>
+    <a class="dropdown-item" href="venderProductos.php">Verder producto</a>
+    <a class="dropdown-item" href="vistaVenderProductos.php">Productos en venta</a>
     <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
   </div>
 </div>

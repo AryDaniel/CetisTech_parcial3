@@ -38,7 +38,6 @@
 ?>
 
                              <!-- INFO PERFIL -->  
-
     <div class="container w-50 bg-light mt-5 align-left rounded shadow">
         <div class="row align-items-stretch">
             <div class="col">    
@@ -67,7 +66,7 @@
                                         include "editarPerfil.php";
                                     ?>
                                 </ul>
-                            
+
             </div>
         </div>
     </div>

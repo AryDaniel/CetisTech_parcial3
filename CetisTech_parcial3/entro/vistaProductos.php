@@ -35,7 +35,7 @@
                             </div>
 
                             <div class="col-lg-6 px-xl-10">
-                                    <h1 class="mb-0"><?php echo $registro["nombre_producto"]; ?><?php $registro["id"]; ?></h1>
+                                    <h1 class="mb-0"><?php echo $registro["nombre_producto"]; ?></h1>
 
                                 <ul class="list-unstyled mb-1-9">
                                     <br><br>

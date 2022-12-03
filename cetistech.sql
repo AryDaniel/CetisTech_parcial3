@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2022 a las 20:21:00
+-- Tiempo de generación: 03-12-2022 a las 08:05:14
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -46,7 +46,7 @@ INSERT INTO `productosenventa` (`id`, `nombre_producto`, `precio`, `descripcion`
 (2, 'pantalla SAMSUNG LS24R350FZLXZX', 3199, 'La avanzada tecnología de confort ocular reduce la fatiga visual, permitiéndole utilizar el monitor por un mayor periodo de tiempo. Además, la tecnología Flicker Free elimina continuamente el agotador', 'imagenesVenta/pantalla2.jpg', 'Pantalla ', '0'),
 (3, 'pantalla SAMSUNG LC24F396FHLXZX ', 3875, 'Comodidad visual más natural\r\nFabricados en materiales de alta calidad\r\nCalidad a un precio asequible\r\nExplora nuestra gama de productos', 'imagenesVenta/pantalla3.jpg', 'Pantalla ', '0'),
 (4, 'Mouse Ocelot Gaming OGEM01\r\n', 570, 'Sensor más preciso: Cuenta con sensor óptico de alta precisión, que permite detectar los movimientos más precisamente al hacer movimientos rápidos.\r\n', 'imagenesVenta/mouse1.jpg', 'Mouse', '0'),
-(5, 'Mouse Free Wolf M6', 640, 'El nuevo mouse profesional personalizado para juegos 2022, apariencia simple y elegante, diseño ergonómico y aerodinámico, liviano y delgado lo hace ideal para viajar, puede caber fácilmente en un bol', 'imagenesVenta/mouse2.jpg', 'Mouse', '0'),
+(5, 'Mouse Free Wolf M6', 640, 'El nuevo mouse profesional personalizado para juegos 2022, apariencia simple y elegante, diseño ergonómico y aerodinámico, liviano y delgado lo hace ideal para viajar, puede caber fácilmente en un bol', 'imagenesVenta/mouse2.jpg', 'Mouse', '1'),
 (6, 'Mouse Logitech G502\r\n', 400, 'Además de las características principales de desempeño y personalización, hay muchos detalles meticulosamente diseñados.', 'imagenesVenta/mouse3.jpg', 'Mouse', '0'),
 (10, 'Auriculares Motorola Pulse XT120\r\n', 800, 'Escuchá música ininterrumpidamente con el Motorola Pulse 120. Calidad de sonido impresionante y bajos mejorados. Cable con plug de 3.5 mm que también cuenta con un micrófono.', 'imagenesVenta/auriculares1.png', 'Auriculares ', '0'),
 (11, 'Auricular Gamer Kotion PC Azul', 1200, 'Retroiluminacion Led en auriculares y micrófono para PC, PS4, Xbox One y Switch.', 'imagenesVenta/auriculares2.jpg', 'Auriculares ', '0'),
@@ -54,9 +54,9 @@ INSERT INTO `productosenventa` (`id`, `nombre_producto`, `precio`, `descripcion`
 (13, 'Telcel Apple iPhone 11 Black\r\n', 11800, 'iPhone 11 es el nuevo favorito entre los gadgets del momento.\r\ntamaño de 6.1\" con pantalla con tecnología LCD Liquit Retina, True Tone', 'imagenesVenta/Apple11Black.jpg', 'Telefonos', '0'),
 (14, 'Apple iPhone 9 ', 7200, '+Body Dimensions 138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)\r\n+Sreen Glass Gorilla Glass, Screen 5.5 inches, 83.4 cm2\r\n+Aluminum back, aluminum frame\r\n+Nano-SIM\r\n+Resolution 750 x 1334 pixels\r\n+3D Touch display & home button\r\n+Operating System: iOS 13', 'imagenesVenta/iphone-9-back.jpg', 'Telefonos', '1'),
 (15, 'Apple iPhone 8', 4890, 'This Apple iPhone 8 64GB Factory Unlocked Smartphone has been determined fully functional by our industry leading functionality inspection.', 'imagenesVenta/iphone8black.jpg', 'Telefonos', '0'),
-(16, 'IP68 Impermeable Relojes Inteligentes con Monitor de Ritmo Cardíaco', 479, '- Monitor de Ritmo Cardíaco y de Sueño\r\n- Seguimiento de Actividades en Tiempo Real\r\n- Multifunción y Notificación Mensaje\r\n- Pantalla OLED y IP68 Resistente al Agua', 'imagenesVenta/RelojesInteligentes1.jpg', 'reloj', '1'),
-(17, 'Q8 stylish Relojes sports smartwatch', 1200, 'Reloj inteligente deportivo para hombre y mujer, pulsera con control del ritmo cardíaco, resistente al agua, para Android e iOS, 2020\r\n', 'imagenesVenta/RelojesInteligentes2.jpg', 'reloj', '0'),
-(18, 'soundpeats smartwatch Relojes ipx68', 699, 'Color - Purpúreo + Rosa\r\nTamaño de la pantalla - 1.69 Pulgadas\r\nForma - Fectangular\r\nRango de edad - Adulto', 'imagenesVenta/RelojesInteligentes3.jpg', 'reloj', '0'),
+(16, 'IP68 Impermeable Relojes Inteligentes con Monitor de Ritmo Cardíaco', 479, '- Monitor de Ritmo Cardíaco y de Sueño\r\n- Seguimiento de Actividades en Tiempo Real\r\n- Multifunción y Notificación Mensaje\r\n- Pantalla OLED y IP68 Resistente al Agua', 'imagenesVenta/RelojesInteligentes1.jpg', 'Relojes', '1'),
+(17, 'Q8 stylish Relojes sports smartwatch', 1200, 'Reloj inteligente deportivo para hombre y mujer, pulsera con control del ritmo cardíaco, resistente al agua, para Android e iOS, 2020\r\n', 'imagenesVenta/RelojesInteligentes2.jpg', 'Relojes', '0'),
+(18, 'soundpeats smartwatch Relojes ipx68', 699, 'Color - Purpúreo + Rosa\r\nTamaño de la pantalla - 1.69 Pulgadas\r\nForma - Fectangular\r\nRango de edad - Adulto', 'imagenesVenta/RelojesInteligentes3.jpg', 'Relojes', '0'),
 (19, 'Alcatel 71A ', 2069, 'Se trata de un equipo con sistema operativo Android 10 con tecnología 4G y conexión wi-fi, cuenta con cámara trasera de 8 mp con flash y cámara frontal de 5 mp. La pantalla es de 5.5\", memoria interna 32 GB expandible a 128 GB y memoria RAM de 2GB. Funciona con procesador quad core de 1.2 GHz y con batería de 3000 mAh.', 'imagenesVenta/celular4.jpg', 'Telefonos', '1'),
 (20, 'Samsung Galaxy S10+, 128GB, Prisma Negro - Totalmente desbloqueado Android', 5500, 'Este Galaxy S10 Plus está reacondicionado certificado. Es 100% funcional y en perfectas condiciones cosméticas con la posibilidad de unas pocas marcas de cabello claras. No viene en su embalaje original,  Este Galaxy S10 Plus es totalmente funcional con T-Mobile, AT&T y todas las demás redes GSM. ', 'imagenesVenta/celular5.png', 'Telefonos', '0'),
 (21, 'Samsung Note 10 Desbloqueado, 256, negro, (Aura Black) Android', 6700, 'La carga rápida, la potencia inteligente de larga duración y el procesamiento de alta velocidad duran más que lo que lanzas en la Note 10.\r\nLa nueva evolución de S Pen te da la potencia de los gestos de aire, un disparador remoto y botón de lista de reproducción y escritura a mano, todo en una varita mágica.', 'imagenesVenta/celular6.jpg', 'Telefonos', '0'),
@@ -91,6 +91,38 @@ INSERT INTO `usuarios` (`id_usuario`, `email`, `usuario`, `password`, `imagen`) 
 (4, 'cetis0107@hotmail.com', 'Jiq', '12345678', 'imgUsuario/login.png'),
 (6, 'fernando@cetis107.edu.mx', 'FERNANDO', 'FERNANDO', 'imgUsuario/login.png'),
 (7, 'contacto@bancoazteca.mx', 'bancoazteca', 'abc123', 'imgUsuario/login.png'),
+(32, 'peter@gemil.com', 'peter', '1234', 'imgUsuario/login.png'),
+(33, 'ere@ere', 'ere', 'ere', 'imgUsuario/login.png'),
+(34, 'hola', 'hola', 'hola', 'imgUsuario/login.png'),
+(35, 'hele', 'HELLLO', 'hi', 'imgUsuario/login.png'),
+(36, 'yuyuyu', 'yuyuyu', 'yuuyuy', 'imgUsuario/login.png'),
+(37, 'tttrtrtr', 'rttrtrt', 'rtrtr', 'imgUsuario/login.png'),
+(38, 'hector@gmail.com', 'hector', 'hector', 'imgUsuario/login.png'),
+(39, 'franco', 'franco', 'franco', 'imgUsuario/login.png');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `venderproductos`
+--
+
+CREATE TABLE `venderproductos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(200) NOT NULL,
+  `precio` int(10) NOT NULL,
+  `descripcion` text NOT NULL,
+  `imagen` varchar(100) NOT NULL,
+  `categoria` varchar(30) NOT NULL,
+  `id_usuario` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `venderproductos`
+--
+
+INSERT INTO `venderproductos` (`id`, `nombre`, `precio`, `descripcion`, `imagen`, `categoria`, `id_usuario`) VALUES
+(2, 'Free wolf X15 Mouse Inalámbrico', 198, 'Wireless óptico Recargable 2.4 G Ergonómico Silencioso Click con Receptor USB 3', 'imgUsuarioVenta/mouse.jpg', 'Mouse', 1),
+(3, 'Celular Zuum Desbloqueado', 329, 'puedes realizar llamadas y enviar mensajes desde donde quiera que estés.', 'imgUsuarioVenta/alcatel.webp', 'Telefonos', 1);
 
 --
 -- Índices para tablas volcadas
@@ -109,6 +141,13 @@ ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
+-- Indices de la tabla `venderproductos`
+--
+ALTER TABLE `venderproductos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -122,7 +161,23 @@ ALTER TABLE `productosenventa`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT de la tabla `venderproductos`
+--
+ALTER TABLE `venderproductos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `venderproductos`
+--
+ALTER TABLE `venderproductos`
+  ADD CONSTRAINT `venderproductos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

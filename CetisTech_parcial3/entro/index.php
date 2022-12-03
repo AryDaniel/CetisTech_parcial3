@@ -47,7 +47,7 @@
 </style>
 <body class="fondo2">
     <?php include 'menu.php';?>
-    <br><br>
+    <br>
 
 
   <div class="media position-relative card-custom">
