@@ -8,6 +8,22 @@
     <title>Cetis Tecnologia</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+    <style>
+        .banner{
+            position: absolute;
+            background-color: #1765be;
+            width: 100%;
+            height: 125px;
+            position: center center;
+
+        }
+        .img-redonda{
+            position: relative;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px #4B4D4A;
+        }
+    </style>
 </head>
 <body class="fondo2">
   <?php include 'menu.php'; ?>
@@ -21,52 +37,37 @@
     $registro = $resultado->fetch_assoc();
 ?>
 
+                             <!-- INFO PERFIL -->  
 
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mb-4 mb-sm-5">
-                <div class="card card-style1 border-0">
-                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img class="rounded-lg" src="<?php echo $registro['imagen']; ?>" width="400px">
-                            </div>
-
-
-                            <div class="col-lg-6 px-xl-10">
-                                    <br><br><br>
-                                    <h2 class="mb-0">Usuario:</h2>
-                                    <h2 class="mb-0"><?php echo $registro["usuario"]; ?></h2>
-                                    <br>
-                                    <h2 class="mb-0">Correo:</h2>
-                                    <h2 class="mb-0"><?php echo $registro["email"]; ?></h2>
-                                    
-                                    <br><br>
-                                    <p>
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Visualizar contraseña</a>
-                                    </p>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                                <div class="card card-body">
-                                                    <?php echo $registro["password"]; ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                <ul class="list-unstyled mb-1-9">
+    <div class="container w-50 bg-light mt-5 align-left rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col">    
+                     <div class="row">                   
+                     <div class="banner">
+                     </div>  
+                     </div>
+                     <div class="mb-4 mt-3 text-center">
+                        <img class="img-redonda" width="200px" height="150px" src="<?php echo $registro['imagen']; ?>">
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputUsuario" class="form-label">Nombre completo:</label>
+                        <input type="text" class="form-control" name="inputUsuario" value="<?php echo $registro["usuario"]; ?>"disabled>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputUsuario" class="form-label">Correo electronico:</label>
+                        <input type="text" class="form-control" name="inputUsuario" value="<?php echo $registro["email"]; ?>"disabled>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputPassword" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" name="inputPassword" value="<?php echo $registro["password"]; ?>"disabled>
+                    </div>
+                    <ul class="list-unstyled mb-1-9">
                                     <br><br>
                                     <?php 
                                         include "editarPerfil.php";
                                     ?>
                                 </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                            
             </div>
         </div>
     </div>

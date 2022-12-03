@@ -53,6 +53,7 @@
                     
                     <div class="text-center">
                         <button type="submit" class="btn btn-success">Crear cuenta</button>
+                        <div class="my-3">Ya tienes una cuenta? <a href="index.php">Inicia sesión</a></div>
                     </div>
                     <br>
                 </form>            

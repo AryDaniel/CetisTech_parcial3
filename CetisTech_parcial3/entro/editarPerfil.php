@@ -49,7 +49,7 @@
 
             <br><br><br>
             <div class="modal-footer">
-                <input type="submit" class="btn btn-info" value="   Actualizar   ">
+                <input type="submit" class="btn btn-primary" value="   Actualizar   ">
                 <a href="consultarDatos.php" class="btn btn-danger">Cancelar Edición</a>
             </div>
             <br>
