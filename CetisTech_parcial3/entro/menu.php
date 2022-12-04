@@ -95,8 +95,10 @@
           <p class="transparentar">aaaaaa</p>
         </li>
         <li>
-        <form class="form-row"> 
-          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+
+    <!----------------- Buscador -------------------->
+        <form class="form-row" action="resultadoBusqueda.php"> 
+          <input name="termino" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
         </form>
 
