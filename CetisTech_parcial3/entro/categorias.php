@@ -35,7 +35,7 @@
                     <p class="card-text"><?php echo $registro["descripcion"]; ?></p>
                 </div>
                 <div class="card-footer">
-                    <a href="vistaProductos.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
+                    <a href="vistaProductos.php?id=<?php echo $registro["id_productosenventa"]; ?>" type="button" class="btn btn-primary">Mas información</a>
                 </div>
             </div>
         </div>

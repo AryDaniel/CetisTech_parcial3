@@ -1,10 +1,22 @@
 <?php
-
+    session_start();
     include '../conexionConBD.php';
 
-    $id = $_GET["id"];
+    $idUsuario  = $_SESSION['id_perfil_registro'];
+    $idProducto = $_GET["id"];
 
-    $sql = "UPDATE productosenVenta SET carrito='0' ". "WHERE id=".$id;
+    $sql = "DELETE carrito FROM carrito, usuarios, productosenventa
+        WHERE id_usuario   = ".$idUsuario."
+            AND	id_usuario = idUsuario
+            AND idProducto = ".$idProducto."
+            AND idProducto = productosenventa.id_productosenventa";
+
+            
+            "DELETE carrito FROM carrito, usuarios, productosenventa
+        WHERE usuarios.id_usuario = 1 
+            AND	usuarios.id_usuario = carrito.idUsuario
+            AND carrito.idProducto = 1
+            AND carrito.idProducto = productosenventa.id_productosenventa";
 
     if($conexion->query($sql) === TRUE){
 
@@ -12,7 +24,5 @@
             echo 'window.location.href="vistaCarrito.php";';
         echo '</script>';
     } 
-
- 
 
 ?>

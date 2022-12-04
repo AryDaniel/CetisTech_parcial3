@@ -43,13 +43,16 @@
       background-color: #1765be;
     }
 </style>
-  <?php
-      include ('../conexionConBD.php');
-      $sql = "SELECT * FROM `productosenventa` WHERE carrito = '1'";
-      $contarCarrito = $conexion->query($sql);
+<?php
+    include '../conexionConBD.php';
 
-      $count = mysqli_num_rows($contarCarrito);
-  ?>
+    $idUsuario  = $_SESSION['id_perfil_registro'];
+
+    $sql = "SELECT * FROM carrito WHERE carrito.idUsuario =".$idUsuario;
+    $contarCarrito = $conexion->query($sql);
+
+    $count = mysqli_num_rows($contarCarrito);
+?>
 <!-- Navbar -->
 <div class="fondo-navbar">
 <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
@@ -99,26 +102,27 @@
 
       </li>
     </ul>
-    <!-- Carrito -->
+    <!----------------- Carrito -------------------->
     
-  <a  href="vistaCarrito.php" role="button aria-haspopup="true" aria-expanded="false">
+    <a  href="vistaCarrito.php" role="button aria-haspopup="true" aria-expanded="false">
   <img class="perfil" src="img/carrito.png"  width="30px">
-  <button type="button" class="btn btn-custom"><span class="badge badge-light"><?php echo $count; ?></span>
+  <button type="button" class="btn btn-custom">
+    <span class="badge badge-light"><?php echo $count; ?></span>
+  </button>
   </a>
-</button>
 
-<p class="transparentar">aaaa</p>
+<p class="transparentar">aaaaaa</p>
 
-    <!-- Cuenta -->
+    <!--------------- Cuenta --------------->
     <div class="dropdown show">
   <a  href="index.php" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <img class="perfil" src="img/perfil.png" alt="" width="30px">
+    <img class="perfil" src="img/perfil.png" alt="" width="30px">
   </a>
 
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="perfil.php">Perfil</a>
     <a class="dropdown-item" href="venderProductos.php">Verder producto</a>
-    <a class="dropdown-item" href="vistaVenderProductos.php">Productos en venta</a>
+    <a class="dropdown-item" href="vistaVenderProductos.php">Tus productos en venta</a>
     <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
   </div>
 </div>

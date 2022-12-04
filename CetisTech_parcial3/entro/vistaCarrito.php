@@ -11,12 +11,16 @@
 </head>
 <body class="fondo2">
   <?php include 'menu.php'; ?>
-
+    <br>
 
     <?php
         include '../conexionConBD.php';
-        $sql = "SELECT * FROM productosenVenta 
-            WHERE carrito='1'";
+        $id = $_SESSION['id_perfil_registro'];
+        $sql = "SELECT productosenventa.* 
+        FROM productosenventa, carrito, usuarios 
+        WHERE idProducto = id_productosenventa 
+            AND id_usuario=".$id."
+            AND id_usuario = idUsuario";
         $resultado = $conexion->query($sql);
     ?>
     
@@ -33,8 +37,8 @@
                     <p class="card-text"><?php echo $registro["descripcion"]; ?></p>
                 </div>
                 <div class="card-footer">
-                    <a href="vistaProductos.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-primary">Acerca de</a>
-                    <a href="eliminarCarrito.php?id=<?php echo $registro["id"]; ?>" type="button" class="btn btn-danger">Eliminar</a>
+                    <a href="vistaProductos.php?id=<?php echo $registro["id_productosenventa"]; ?>" type="button" class="btn btn-primary">Acerca de</a>
+                    <a href="eliminarCarrito.php?id=<?php echo $registro["id_productosenventa"]; ?>" type="button" class="btn btn-danger">Eliminar</a>
                 </div>
             </div>
         </div>

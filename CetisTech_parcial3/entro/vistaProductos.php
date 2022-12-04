@@ -16,7 +16,7 @@
   <?php
     include '../conexionConBD.php';
     $id = $_GET["id"];
-    $sql = "SELECT * FROM productosenVenta WHERE id=" . $id;
+    $sql = "SELECT * FROM productosenVenta WHERE id_productosenventa=" . $id;
     $resultado = $conexion->query($sql);
     $registro = $resultado->fetch_assoc();
 ?>
@@ -42,7 +42,8 @@
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">$<?php echo $registro["precio"]; ?></li>
                                     <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><?php echo $registro["descripcion"]; ?></li>
                                     <form method="post" action="carrito.php">
-                                        <input name="id" type="hidden" value="<?php echo $registro["id"]; ?>">
+                                        <input name="idProducto" type="hidden" value="<?php echo $registro["id_productosenventa"]; ?>">
+                                        <input name="idUsuario" type="hidden" value="<?php echo $id; ?>">
                                         <input type="submit" class="btn btn-info" value="Agregar al carrito"> 
                                         <br>
                                     </form>
@@ -73,12 +74,13 @@
 
     <!----------------------Productos sugeridos------------------------------->
     <?php        
-        $SQLresultadoCategoria = "select * from productosenventa where categoria like '".$registro["categoria"]."' AND id not like '".$registro["id"]."'";
+        $SQLresultadoCategoria = "select * from productosenventa where categoria like '".$registro["categoria"]."' AND id_productosenventa not like '".$registro["id_productosenventa"]."'";
         $resultadoCategoria = $conexion->query($SQLresultadoCategoria);
     ?>
 
     <div class="alert fondo" role="alert">
     <div align="center">
+        <h3>Productos recomendados:</h3>
         <div class="card-deck col-sm-12 col-lg-10" >
         <?php if($resultadoCategoria->num_rows > 0) { 
             while($row = $resultadoCategoria->fetch_assoc()) {
@@ -90,7 +92,7 @@
                 <p class="card-text" align="right">$<?php echo $row["precio"]; ?></p>
             </div>
             <div class="card-footer">
-                <a href="vistaProductos.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-primary">Mas información</a>
+                <a href="vistaProductos.php?id=<?php echo $row["id_productosenventa"]; ?>" type="button" class="btn btn-primary">Mas información</a>
             </div>
             </div>
 
